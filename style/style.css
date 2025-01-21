@@ -37,6 +37,17 @@ body {
     cursor: pointer;
     transition: 400ms;
 }
+
+.section-title {
+    font-size: 2.87em;
+    font-weight: bold;
+    text-align: center;
+}
+
+section {
+    margin: 60px 140px;
+    background-image: url("../assets/bg.png");
+}
 /* Header Style */
 
 nav {
@@ -131,6 +142,73 @@ nav {
 .banner-image img {
     width: 100%;
 }
+
+
+/* Curriculum section style */
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.box {
+    text-align: center;
+    border-radius: 18.86px;
+    padding: 0px 40px;
+}
+
+.box-image {
+    width: auto;
+    margin-top: 52px;
+}
+
+.box-title {
+    font-size: 1.53em;
+    font-weight: bold;
+    margin: 32px auto;
+}
+
+.box-description, .box h5 {
+    font-size: 0.94em;
+    margin-bottom: 33px;
+}
+
+.box h5 {
+    font-size: 0.94em;
+    margin-bottom: 58px;
+}
+.box-1 {
+    background: linear-gradient(#DEF5FF, #FFFFFF), white;
+    border: 1px solid #DEF5FF;
+}
+
+.box-1 h5 {
+    color: #64C8FF;
+}
+
+.box-2 {
+    background: linear-gradient(#FFF4DC, #FFFFFF), white;
+    border: 1px solid #FFF4DC;
+}
+
+.box-2 h5 {
+    color: #F0AA00;
+}
+
+.box-3 {
+    background: linear-gradient(#EEE1FF, #FFFFFF), white;
+    border: 1px solid #EEE1FF;
+}
+
+.box-3 h5 {
+    color: #8700FF;
+}
+
+
+
+
 @media screen and (max-width: 576px) {
     nav {
         margin: 12px 16px;
@@ -160,5 +238,16 @@ nav {
         margin-left: 12.5px;
         margin-right: 12.5px;
         text-align: center;
+        margin-bottom: 20px;
+    }
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        margin: 40px 16.6px;
+    }
+    .box-container {
+        margin-top: 20px;
     }
 }
