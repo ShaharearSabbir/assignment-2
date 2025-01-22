@@ -46,7 +46,7 @@ body {
 
 .section-title {
     margin-bottom: 80px;
-    font-size: 2.87em;
+    font-size: 2.87rem;
     font-weight: bold;
     text-align: center;
 }
@@ -135,12 +135,12 @@ nav {
 }
 
 .banner-title {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
 .banner-description {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 
 .banner-image img {
@@ -164,25 +164,37 @@ nav {
     padding: 0px 40px;
 }
 
+.box:hover {
+    transform: scale(1.05);
+    transition: 400ms;
+}
 .box-image {
-    width: auto;
+    max-width: 50% ;
     margin-top: 52px;
 }
 
 .box-title {
-    font-size: 1.53em;
+    font-size: 1.53rem;
     font-weight: bold;
     margin: 32px auto;
 }
 
 .box-description, .box h5 {
-    font-size: 0.94em;
+    font-size: 0.94rem;
     margin-bottom: 33px;
 }
 
+.box-description {
+    color: #808080;
+}
 .box h5 {
-    font-size: 0.94em;
+    font-size: 0.94rem;
     margin-bottom: 58px;
+}
+
+.box h5:hover {
+    color: black;
+    cursor: pointer;
 }
 .box-1 {
     background: linear-gradient(#DEF5FF, #FFFFFF), white;
@@ -256,6 +268,12 @@ nav {
     border-radius: 16px;
 }
 
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 400ms;
+}
+
 .card-container .card img {
     width: 100%;
     border-radius: 16px 16px 0 0;
@@ -264,12 +282,16 @@ nav {
 .positional {
     position: relative;
 }
+
+.positional img {
+    width: 100%;
+}
 .positional .date {
     background-color: #95B226;
     position: absolute;
     bottom: -15.34px;
     left: 38px;
-    font-size: 0.94em;
+    font-size: 0.94rem;
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
@@ -278,7 +300,7 @@ nav {
 
 .card .card-title {
     padding: 38px 38px 28px 38px;
-    font-size: 0.94em;
+    font-size: 0.94rem;
     font-weight: bold;
 
 }
@@ -297,8 +319,9 @@ nav {
 }
 
 .card-1 .card-description {
-    font-size: 0.94em;
+    font-size: 0.94rem;
     padding: 0 69px 35px 39px;
+    color: #666666;
 }
 
 .card-3 .date, .card-4 .date, .card-5 .date {
@@ -315,7 +338,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content:space-between;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     gap: 50px;
 }
 
@@ -333,7 +356,7 @@ footer {
 }
 
 .footer-info > div h3 {
-    font-size: 2.62em;
+    font-size: 2.62rem;
 }
 .footer-content {
     display: grid;
@@ -343,7 +366,7 @@ footer {
 
 
 .footer-links h3{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 32px;
 }
 
@@ -352,8 +375,19 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-content li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content li a:hover {
+    color: black;
+}
+.footer-content li a:visited {
+    color: white;
+}
 .social-container h3{
-    font-size: 1.62em;
+    font-size: 1.62rem;
     margin-bottom: 32px;
 }
 
@@ -364,8 +398,13 @@ footer {
 
 .social img {
     width: 40.61px;
+    scale: 1.1;
 }
 
+.social img:hover {
+    transform: scale(1.1);
+    transition: 400ms;
+}
 @media screen and (max-width: 576px) {
     nav {
         margin: 12px 16px;
@@ -386,7 +425,7 @@ footer {
 
     #hrForMobile {
         display: block;
-        border: 1px solid orange;
+        border: 0.5px solid orange;
     }
 
     .banner {
@@ -410,8 +449,12 @@ footer {
     .card-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .positional .date {
+        bottom: -12px;
+        left: 22px;
+    }
     .positional .date, .card .card-title {
-        font-size: 0.57em;
+        font-size: 0.57rem;
     }
     footer {
         grid-template-columns: 1fr;
