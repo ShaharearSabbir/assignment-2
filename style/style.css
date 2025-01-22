@@ -11,6 +11,12 @@ body {
 }
 
 /* Shared Style  */
+
+.sandwich, #hrForMobile, .card-4, .card-5 {
+    display: none;
+}
+
+
 .btn {
     padding: 10px 60.5px;
     border: none;
@@ -28,7 +34,7 @@ body {
 }
 
 
-.btn-dark {
+.btn-dark { 
     background-color: black;
 }
 
@@ -39,13 +45,14 @@ body {
 }
 
 .section-title {
+    margin-bottom: 80px;
     font-size: 2.87em;
     font-weight: bold;
     text-align: center;
 }
 
 section {
-    margin: 60px 140px;
+    padding: 60px 140px;
     background-image: url("../assets/bg.png");
 }
 /* Header Style */
@@ -109,9 +116,6 @@ nav {
     color: #5D58EF;
 }
 
-.sandwich, #hrForMobile {
-    display: none;
-}
 
 /* Banner style */
 
@@ -151,6 +155,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .box {
@@ -206,17 +211,108 @@ nav {
     color: #8700FF;
 }
 
+.arrow-btn {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.arrow-btn div {
+    background-color: #FEA301;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.arrow-btn div:hover {
+    background-color: black;
+    color: #FEA301;
+    transform: scale(1.1);
+    transition: 400ms;
+}
 
 
+/* Stories styles */
+
+.stories {
+    background:linear-gradient(rgba(255, 255, 255, 0.3), rgba(254, 163, 1, 0.3)), url("../assets/bg.png");
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.card-container .card {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.card-container .card img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.positional {
+    position: relative;
+}
+.positional .date {
+    background-color: #95B226;
+    position: absolute;
+    bottom: -15.34px;
+    left: 38px;
+    font-size: 0.94em;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+
+.card .card-title {
+    padding: 38px 38px 28px 38px;
+    font-size: 0.94em;
+    font-weight: bold;
+
+}
+
+.card-container .card-1 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.stories .btn-container {
+    text-align: center;
+}
+
+.card-1 .date {
+    background-color: #3CD8E8;
+}
+
+.card-1 .card-description {
+    font-size: 0.94em;
+    padding: 0 69px 35px 39px;
+}
+
+.card-3 .date, .card-4 .date, .card-5 .date {
+    background-color: #5D58F0;
+}
 
 @media screen and (max-width: 576px) {
     nav {
         margin: 12px 16px;
     }
-    .nav-links, .contact, .logo h1 {
+    .nav-links, .contact, .logo h1, .arrow-btn, .card-1 {
         display: none;
     }
-    .sandwich {
+    .sandwich, .card-4, .card-5 {
         display: block;
     }
 
@@ -245,9 +341,15 @@ nav {
     }
 
     section {
-        margin: 40px 16.6px;
+        padding: 40px 16.6px;
     }
     .box-container {
         margin-top: 20px;
+    }
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .positional .date, .card .card-title {
+        font-size: 0.57em;
     }
 }
