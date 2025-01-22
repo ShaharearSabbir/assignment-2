@@ -116,6 +116,13 @@ nav {
     color: #5D58EF;
 }
 
+marquee {
+    height: 40px;
+    color: white;
+    font-size: 2rem;
+    background-color: #01ACFD;
+}
+
 
 /* Banner style */
 
