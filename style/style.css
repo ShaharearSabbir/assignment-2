@@ -305,6 +305,67 @@ nav {
     background-color: #5D58F0;
 }
 
+
+/* Footer Styles  */
+
+footer {
+    color: white;
+    background-color: #01ACFD;
+    padding: 123px 140px 174px 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:space-between;
+    font-size: 1.25em;
+    gap: 50px;
+}
+
+.footer-info {
+    max-width: 400px;
+}
+
+.footer-info > div {
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.footer-info > div img {
+    width: 80px;
+}
+
+.footer-info > div h3 {
+    font-size: 2.62em;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+.footer-links h3{
+    font-size: 1.5em;
+    margin-bottom: 32px;
+}
+
+.footer-content li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.social-container h3{
+    font-size: 1.62em;
+    margin-bottom: 32px;
+}
+
+.social {
+    display: flex;
+    gap: 10.15px;
+}
+
+.social img {
+    width: 40.61px;
+}
+
 @media screen and (max-width: 576px) {
     nav {
         margin: 12px 16px;
@@ -351,5 +412,13 @@ nav {
     }
     .positional .date, .card .card-title {
         font-size: 0.57em;
+    }
+    footer {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
     }
 }
