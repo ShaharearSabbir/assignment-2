@@ -86,16 +86,16 @@ nav {
     list-style: none;
 }
 
-.nav-links ul #link-1 {
+.nav-links ul #link-1 a{
     color: #FEA301;
 }
-.nav-links ul #link-2 {
+.nav-links ul #link-2 a{
     color: #01ACFD;
 }
-.nav-links ul #link-3 {
+.nav-links ul #link-3 a{
     color: #05D4DF;
 }
-.nav-links ul #link-4 {
+.nav-links ul #link-4 a{
     color: #5D58EF;
 }
 .nav-links ul li a {
